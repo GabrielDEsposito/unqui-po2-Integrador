@@ -48,4 +48,10 @@ public class EstadoCheckIn implements EstadoReserva{
         reserva.procesarReembolsoCompleto();
         reserva.setEstadoActual(new EstadoCancelada());
 	}
+
+	@Override
+	public void notificar(ObservadorReserva obs, Reserva reserva, EstadoReserva anterior, EstadoReserva nuevo) {
+
+		
+	}
 }

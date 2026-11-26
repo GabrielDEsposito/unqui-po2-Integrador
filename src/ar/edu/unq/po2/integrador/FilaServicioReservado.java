@@ -1,5 +1,6 @@
 package ar.edu.unq.po2.integrador;
 
+
 public class FilaServicioReservado {
     private final String nombre;
     private final int unidadesVendidas;

@@ -47,6 +47,16 @@ public class EstadoConfirmada implements EstadoReserva{
 		reserva.setEstadoActual(new EstadoCancelada());
 	}
 
+	@Override
+	public void notificar(ObservadorReserva obs, Reserva reserva, EstadoReserva anterior, EstadoReserva nuevo) {
+		obs.actualizar(reserva, anterior, nuevo);
+		
+	}
+
+	
+
+	
+
 
 
 

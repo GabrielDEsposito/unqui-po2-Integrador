@@ -4,6 +4,8 @@ public class Cupo {
 	private int total;
 	private int reservados;
 	
+	
+	
 	public Cupo(int total) {
 		if (total < 0) throw new IllegalArgumentException("El cupo no puede ser negativo");
 		this.total = total;

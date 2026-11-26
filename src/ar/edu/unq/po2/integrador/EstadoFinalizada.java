@@ -49,4 +49,10 @@ public class EstadoFinalizada implements EstadoReserva{
 		
 	}
 
+	@Override
+	public void notificar(ObservadorReserva obs, Reserva reserva, EstadoReserva anterior, EstadoReserva nuevo) {
+		obs.actualizar(reserva, anterior, nuevo);
+		
+	}
+
 }

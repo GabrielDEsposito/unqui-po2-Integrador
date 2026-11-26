@@ -49,4 +49,10 @@ public class EstadoSolicitudPendiente implements EstadoReserva {
 		
 	}
 
+	@Override
+	public void notificar(ObservadorReserva obs, Reserva reserva, EstadoReserva anterior, EstadoReserva nuevo) {
+	
+		
+	}
+
 }

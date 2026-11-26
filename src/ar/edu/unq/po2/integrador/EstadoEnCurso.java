@@ -47,4 +47,9 @@ public class EstadoEnCurso implements EstadoReserva{
 		 reserva.reembolsarServicios();
 		 reserva.setEstadoActual(new EstadoCancelada());
 	}
+
+	@Override
+	public void notificar(ObservadorReserva obs, Reserva reserva, EstadoReserva anterior, EstadoReserva nuevo) {
+		obs.actualizar(reserva, anterior, nuevo);
+	}
 }
